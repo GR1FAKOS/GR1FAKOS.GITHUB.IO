@@ -1,0 +1,66 @@
+<html lang="el-GR">
+ <head>
+ <title>Index3</title>
+ <meta charset="utf-8">
+ <meta name="author" content="Ο συγγραφέας">
+ <meta name="description" content="Λίστα συνδέσμων με μορφοποίηση
+ πλαισίων">
+ <style>
+ li {
+ display: inline-block;
+ height: 1.2em;
+ margin: 2px;
+ padding: 10px;
+ border: 4px double coral;
+ background-color: lightgreen;
+ }
+ a:active {
+ color: green;
+ }
+ ol li:hover {
+ outline-style: dotted;
+ outline-color: orange;
+ }
+ a:hover {
+ background-color: yellow;
+ }
+ a:visited {
+ color: gray;
+ }
+ </style>
+ </head>
+ <body>
+ <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+ <button onclick="myFunction()">Hide text</button>
+ <div id="myDIV">
+ <h3>Ανακοινωσεις</h3> 
+ </div>
+ <ul><li>Σχολειο 
+ <ol>
+ <li><a href="http://2epal-chalandr.att.sch.gr/index_htm_files/2022%20Psyhologos_11%2001.docx" target="_blank">
+ Ψυχολογος</a></li>
+ <li><a href="http://2epal-chalandr.att.sch.gr/index_htm_files/2022%20Enimerosi%20Goneon_11%2022.xlsx" target="_blank">
+ Ενημερωση Γονεων</a></li>
+ </ol>
+ </li>
+ <li>Επαγγελματικες ιδιοτητες 
+ <ol>
+ <li><a href="http://2epal-chalandr.att.sch.gr/index_htm_files/tomeas_pliroforikis.htm" target="_blank">
+ Πληροφορικη</a></li>
+ <li><a
+ href="http://2epal-chalandr.att.sch.gr/index_htm_files/tomeas_ygeias.htm"
+target="_blank">Φυσιοθεραπεια</a></li>
+ </ol>
+ </li>
+ </ul>
+ </body>
+</html>
